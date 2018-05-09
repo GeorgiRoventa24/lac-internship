@@ -8,7 +8,8 @@ export class ExperimentService {
 
   url: string = "http://localhost:53240/api/experiments"
 
-  constructor(private http: HttpClient
+  constructor(
+    private http: HttpClient
   ) { }
 
   createExperiment(exp: Experiment):  Observable<Experiment>{
